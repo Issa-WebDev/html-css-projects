@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>KONE ISSA...</h1>
+    <div class="calculator">
+        <div>
+            <input type="text" id="display" placeholder="0">
+        </div>
+        <div>
+            <button class="AC" onclick="clearDisplay()">AC</button>
+            <button onclick="addValue('%')">%</button>
+            <button onclick="addValue('/')">/</button>
+            <button onclick="backspace()">🔙</button>
+        </div>
+        <div>
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('*')">x</button>
+        </div>
+        <div>
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('-')">-</button>
+        </div>
+        <div>
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button onclick="addValue('+')">+</button>
+        </div>
+        <div>
+            <button class="zero" onclick="addValue('0')">0</button>
+            <button onclick="addValue('.')">,</button>
+            <button onclick="calculate('=')">=</button>
+        </div>
+    </div>
+
+    <script>
+
+        
+        const display = document.getElementById('display')
+
+        /**
+         * Allow to add a number to other number
+         * @param {string} value 
+         */
+        const addValue = (value) => {
+            display.value += value
+        }
+        
+        // Allow to reset the calculator
+        const clearDisplay = () => {
+            display.value = ''
+        }
+        
+        // Allow to delete the last number
+        const backspace = () => {
+            display.value = display.value.slice(0 , -1)
+        }
+
+        const calculate = () => {
+            try {
+                display.value = eval(display.value)
+            } catch (e) {
+                display.value = 'Error'
+            }
+        }
+
+    </script>
+</body>
+</html>

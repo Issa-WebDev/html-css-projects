@@ -1,245 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pro Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
     <!-- container -->
     <div class="contenair">
-        <!-- Sidebar -->
-        <aside class="aside">
-            <div class="logo">
-                <span class="logo-imoji">💻</span>
-                <h1>
-                    Navaro 
-                    <span class="version">2.0</span>
-                </h1>
+      <!-- Sidebar -->
+      <aside class="aside">
+        <div class="logo">
+          <span class="logo-imoji">💻</span>
+          <h1>
+            Navaro
+            <span class="version">2.0</span>
+          </h1>
+        </div>
+        <div class="close-menu">
+          <span>+</span>
+        </div>
+        <div class="nav">
+          <div class="nav-top">
+            <a href=""><span>📰</span><span class="element">Dashboard</span></a>
+            <a href=""><span>🤵🏽</span><span class="element">Users</span></a>
+            <a href=""><span>📝</span><span class="element">History</span></a>
+            <a href="" class="active"
+              ><span>📉</span><span class="element">Analystic</span></a
+            >
+            <a href=""
+              ><span>📧</span><span class="element">Email</span
+              ><span class="msg">31</span></a
+            >
+            <a href=""><span>🗒️</span><span class="element">Node list</span></a>
+            <a href=""><span>♻️</span><span class="element">Reports</span></a>
+            <a href=""><span>⚙️</span><span class="element">Settings</span></a>
+            <a href=""><span>➕</span><span class="element">New login</span></a>
+          </div>
+          <div class="nav-bottom">
+            <a href=""><span>🔙</span><span class="element">Logout</span></a>
+          </div>
+        </div>
+      </aside>
+      <!-- End of sidebar -->
+
+      <!-- Section -->
+      <section class="section">
+        <!-- card box -->
+        <h1 class="title">Analystic</h1>
+        <div class="card-box">
+          <div class="card">
+            <div class="status">
+              <p>Total Sales</p>
+              <h1>$65,024</h1>
             </div>
-            <div class="close-menu">
-                <span>+</span>
+            <div class="progress">
+              <div class="circle success"></div>
+              <div class="percentage">+91%</div>
             </div>
-            <div class="nav">
-                <div class="nav-top">
-                    <a href=""><span>📰</span><span class="element">Dashboard</span></a>
-                    <a href=""><span>🤵🏽</span><span class="element">Users</span></a>
-                    <a href=""><span>📝</span><span class="element">History</span></a>
-                    <a href="" class="active"><span>📉</span><span class="element">Analystic</span></a>
-                    <a href=""><span>📧</span><span class="element">Email</span><span class="msg">31</span></a>
-                    <a href=""><span>🗒️</span><span class="element">Node list</span></a>
-                    <a href=""><span>♻️</span><span class="element">Reports</span></a>
-                    <a href=""><span>⚙️</span><span class="element">Settings</span></a>
-                    <a href=""><span>➕</span><span class="element">New login</span></a>
-                </div>
-                <div class="nav-bottom">
-                    <a href=""><span>🔙</span><span class="element">Logout</span></a>
-                </div>
+          </div>
+
+          <div class="card">
+            <div class="status">
+              <p>Site Visit</p>
+              <h1>24,571</h1>
             </div>
-        </aside>
-        <!-- End of sidebar -->
-
-        <!-- Section -->
-        <section class="section">
-            <!-- card box -->
-            <h1 class="title">Analystic</h1>
-            <div class="card-box">
-                <div class="card">
-                    <div class="status">
-                        <p>Total Sales</p>
-                        <h1>$65,024</h1>
-                    </div>
-                    <div class="progress">
-                        <div class="circle success"></div>
-                        <div class="percentage">
-                            +91%
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="status">
-                        <p>Site Visit</p>
-                        <h1>24,571</h1>
-                    </div>
-                    <div class="progress">
-                        <div class="circle danger"></div>
-                        <div class="percentage">
-                            -41%
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="status">
-                        <p>Searches</p>
-                        <h1>14,157</h1>
-                    </div>
-                    <div class="progress">
-                        <div class="circle average"></div>
-                        <div class="percentage">
-                            +75%
-                        </div>
-                    </div>
-                </div>
+            <div class="progress">
+              <div class="circle danger"></div>
+              <div class="percentage">-41%</div>
             </div>
-            <!-- End of card box -->
+          </div>
 
-            <!-- Users -->
-            <h1 class="title">News Users</h1>
-            <div class="users-box">
-                <div class="users">
-                    <div class="photo">
-                        <img src="images/img_3.JPG" alt="">
-                    </div>
-                    <div class="users-info">
-                        <h3>Sarah</h3> 
-                        <p>1 Hours Ago</p>
-                    </div>
-                </div>
-
-                <div class="users">
-                    <div class="photo">
-                        <img src="images/me.JPG" alt="">
-                    </div>
-                    <div class="users-info">
-                        <h3>Issa</h3> 
-                        <p>1hours 10 Min Ago</p>
-                    </div>
-                </div>
-
-                <div class="users">
-                    <div class="photo">
-                        <img src="images/img_1.JPG" alt="">
-                    </div>
-                    <div class="users-info">
-                        <h3>Djara</h3> 
-                        <p>3 Min Ago</p>
-                    </div>
-                </div>
-
-
-                <div class="users">
-                    <div class="plus">
-                        ➕
-                    </div>
-                    <div class="users-info">
-                        <h3>More</h3> 
-                        <p>New Users</p>
-                    </div>
-                </div>
+          <div class="card">
+            <div class="status">
+              <p>Searches</p>
+              <h1>14,157</h1>
             </div>
-            <!-- End users -->
-
-            <!-- Orders -->
-            <div class="table">
-            <h1 class="title">Recents Orders</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Course Names</th>
-                        <th>Course Number</th>
-                        <th>Payment</th>
-                        <th>Status</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>JavaScript Tutorial</td>
-                        <td>K255</td>
-                        <td>Duo</td>
-                        <td class="pending">Pending</td>
-                        <td><a href="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>CSS Full Course</td>
-                        <td>F55255</td>
-                        <td>Returned</td>
-                        <td class="declined">Declined</td>
-                        <td><a href="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Grid css COURSE</td>
-                        <td>A58745</td>
-                        <td>Paid</td>
-                        <td class="actives">Active</td>
-                        <td><a href="">Details</a></td>
-                    </tr>
-
-                </tbody>
-            </table>
-            <p class="more"><a href="">See More</a></p>
+            <div class="progress">
+              <div class="circle average"></div>
+              <div class="percentage">+75%</div>
             </div>
-            <!-- End of Orders -->
+          </div>
+        </div>
+        <!-- End of card box -->
 
-        </section>
-        <!-- End of section -->
+        <!-- Users -->
+        <h1 class="title">News Users</h1>
+        <div class="users-box">
+          <div class="users">
+            <div class="photo">
+              <img src="./images/img_3.JPG" alt="" />
+            </div>
+            <div class="users-info">
+              <h3>Sarah</h3>
+              <p>1 Hours Ago</p>
+            </div>
+          </div>
 
+          <div class="users">
+            <div class="photo">
+              <img src="./images/me.JPG" alt="" />
+            </div>
+            <div class="users-info">
+              <h3>Issa</h3>
+              <p>1hours 10 Min Ago</p>
+            </div>
+          </div>
 
-        <!-- Right -->
-        <div class="right">
-            <div class="top">
-                <div class="menu">
-                    <span>|||</span>
-                </div>
-                <div class="dark-switch">
-                    <span class="light">🔅</span>
-                    <span class="dark">🌙</span>
-                </div>
-                <div class="text">
-                    <p>hey, <strong>there !</strong></p>
-                    <p>I'm Issa</p>
-                </div>
-                <div class="profil">
-                    <img src="images/me.JPG" alt="">
-                </div>
+          <div class="users">
+            <div class="photo">
+              <img src="./images/img_1.JPG" alt="" />
             </div>
-            <div class="bottom">
-                <div class="logo-twice">
-                    <p class="image">💻</p>
-                    <h1>Issa Kone</h1>
-                    <p class="work">Frontend Developer</p>
-                </div>
-    
-                <div class="reminders">
-                    <div class="top-reminders">
-                        <h2>reminders</h2>
-                        <span>🔔</span>
-                    </div>
-                    <div class="message">
-                        <div class="text">
-                            <span>🔊</span>
-                            <div>
-                                <h3>WorkShop</h3>
-                                <p>08:00 AM- 10:00PM</p>
-                            </div>
-                        </div>
-                        <div class="three-dotte">...</div>
-                    </div>
-    
-                    <div class="message">
-                        <div class="text">
-                            <span class="edit">🖍️</span>
-                            <div>
-                                <h3>WorkShop</h3>
-                                <p>06:00 AM- 09:00PM</p>
-                            </div>
-                        </div>
-                        <div class="three-dotte">...</div>
-                    </div>
-    
-                    <div class="add-reminders">
-                        <span>➕</span>
-                        Add reminders
-                    </div>
-                </div>
+            <div class="users-info">
+              <h3>Djara</h3>
+              <p>3 Min Ago</p>
             </div>
+          </div>
+
+          <div class="users">
+            <div class="plus">➕</div>
+            <div class="users-info">
+              <h3>More</h3>
+              <p>New Users</p>
             </div>
-        <!-- End of right -->
+          </div>
+        </div>
+        <!-- End users -->
+
+        <!-- Orders -->
+        <div class="table">
+          <h1 class="title">Recents Orders</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Course Names</th>
+                <th>Course Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JavaScript Tutorial</td>
+                <td>K255</td>
+                <td>Duo</td>
+                <td class="pending">Pending</td>
+                <td><a href="">Details</a></td>
+              </tr>
+              <tr>
+                <td>CSS Full Course</td>
+                <td>F55255</td>
+                <td>Returned</td>
+                <td class="declined">Declined</td>
+                <td><a href="">Details</a></td>
+              </tr>
+              <tr>
+                <td>Grid css COURSE</td>
+                <td>A58745</td>
+                <td>Paid</td>
+                <td class="actives">Active</td>
+                <td><a href="">Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="more"><a href="">See More</a></p>
+        </div>
+        <!-- End of Orders -->
+      </section>
+      <!-- End of section -->
+
+      <!-- Right -->
+      <div class="right">
+        <div class="top">
+          <div class="menu">
+            <span>|||</span>
+          </div>
+          <div class="dark-switch">
+            <span class="light">🔅</span>
+            <span class="dark">🌙</span>
+          </div>
+          <div class="text">
+            <p>hey, <strong>there !</strong></p>
+            <p>I'm Issa</p>
+          </div>
+          <div class="profil">
+            <img src="/images/me.JPG" alt="" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="logo-twice">
+            <p class="image">💻</p>
+            <h1>Issa Kone</h1>
+            <p class="work">Frontend Developer</p>
+          </div>
+
+          <div class="reminders">
+            <div class="top-reminders">
+              <h2>reminders</h2>
+              <span>🔔</span>
+            </div>
+            <div class="message">
+              <div class="text">
+                <span>🔊</span>
+                <div>
+                  <h3>WorkShop</h3>
+                  <p>08:00 AM- 10:00PM</p>
+                </div>
+              </div>
+              <div class="three-dotte">...</div>
+            </div>
+
+            <div class="message">
+              <div class="text">
+                <span class="edit">🖍️</span>
+                <div>
+                  <h3>WorkShop</h3>
+                  <p>06:00 AM- 09:00PM</p>
+                </div>
+              </div>
+              <div class="three-dotte">...</div>
+            </div>
+
+            <div class="add-reminders">
+              <span>➕</span>
+              Add reminders
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of right -->
     </div>
-</body>
+  </body>
 </html>

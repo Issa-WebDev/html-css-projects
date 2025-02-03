@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+:root 
+{
+    --box-border-radius: 10px;
+    --number-color: #333;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111;
+}
+h1
+{
+    color: #333;
+    font-size: 3.8rem;
+    padding-bottom: 5px;
+    -webkit-text-stroke: 2px #222;
+    color: transparent;
+}
+.calculator
+{
+    background-color: #222;
+    padding: 30px;
+    border-radius: var(--box-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input
+{
+    width: 100%;
+    padding: 20px 15px;
+    background-color: var(--number-color);
+    border-radius: var(--box-border-radius);
+    border: 0;
+    outline: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 0 #111;
+}
+.calculator > div
+{
+    display: flex;
+    gap: 15px;
+}
+.AC 
+{
+    color: lime;
+    font-weight: bold;
+}
+::placeholder
+{
+    color: #fff;
+}
+button
+{
+    width: calc(300px / 4 - 4px);
+    height: calc(300px / 4 - 4px);
+    border-radius: var(--box-border-radius);
+    background-color: var(--number-color);
+    outline: 0;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 0 #111;
+    border: 1px solid #222;
+}
+.zero
+{
+    width: calc(300px / 2 + 5px);
+    text-align: left;
+    padding-left: 30px;
+}
