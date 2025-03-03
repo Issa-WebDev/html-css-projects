@@ -15,34 +15,39 @@
         <span>EUR ==> XOF </span>
       </h1>
       <form id="form">
+        <select>
+          <option value="euroToCfa">EUR → XOF</option>
+          <option value="cfaToEuro">XOF → EUR</option>
+        </select>
         <div>
           <input type="text" id="euro" readonly placeholder="Entrer en €" />
-          <span> Convertir > </span>
+          <span> < Convertir > </span>
           <input type="text" id="cfa" readonly placeholder="XOF" />
         </div>
         <button type="submit" class="btn">Convertir</button>
+        <p class="rate"></p>
       </form>
 
       <div class="control">
         <div>
-          <button onclick="addValue('1')">1</button>
-          <button onclick="addValue('2')">2</button>
-          <button onclick="addValue('3')">3</button>
+          <button id="btn">1</button>
+          <button id="btn">2</button>
+          <button id="btn">3</button>
         </div>
         <div>
-          <button onclick="addValue('4')">4</button>
-          <button onclick="addValue('5')">5</button>
-          <button onclick="addValue('6')">6</button>
+          <button id="btn">4</button>
+          <button id="btn">5</button>
+          <button id="btn">6</button>
         </div>
         <div>
-          <button onclick="addValue('7')">7</button>
-          <button onclick="addValue('8')">8</button>
-          <button onclick="addValue('9')">9</button>
+          <button id="btn">7</button>
+          <button id="btn">8</button>
+          <button id="btn">9</button>
         </div>
         <div>
-           <button onclick="addValue('.')">.</button>
-          <button onclick="addValue('0')">0</button>
-          <button onclick="removeOneByOne()">🔙</button>
+          <button id="btn">.</button>
+          <button id="btn">0</button>
+          <button id="remove-btn">🔙</button>
         </div>
       </div>
     </div>
